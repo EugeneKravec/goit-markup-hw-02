@@ -1,3 +1,54 @@
-.link:hover {
-    color: chartreuse;
+/* 
+Основной цвет текста   #757575; - Параграфы (серый)
+Вторичный цвет текста  #212121; - Заголовки (почти черный)
+Акцкет 1 ------------- #FFFFFF; - Текст Героя
+Акцкет 2 ------------- #2196F3; - Синий для кнопок и навигации
+ */
+ /* 
+ Основной цвет фона  #FFFFFF; - Белый
+ Вторичный цвет фона #2F303A; - Герой и Футер
+ */
+
+
+body {
+    background-color: #FFFFFF;
+    color: #212121;;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list .active-page {
+    color: #2196F3;
+}
+
+/* не рпботает почему-то hover */
+.nav .list:hover, 
+.nav .list:focus {
+    color: #ffffff;
+}
+
+.hero {
+    background-color: #2F303A;
+}
+
+.main {
+    background-color: #E5E5E5;
+}
+
+.our-team {
+    background-color:#F5F4FA;
+}
+
+footer {
+    background-color: #2F303A;;
 }
