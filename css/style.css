@@ -28,6 +28,7 @@
 
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: var(--primary-background-color);
 }
 
@@ -71,15 +72,18 @@ footer {
 }
 
 .header-studio {
+    font-family: 'Raleway', sans-serif;
     color: var(--primary-title-color);
 
 }
 
 .footer-studio {
+    font-family: 'Raleway', sans-serif;
     color: var(--logo-color);
 }
 .footer-logo,
 .header-logo {
+    font-family: 'Raleway', sans-serif;
     color: var(--accent-color);
     text-decoration: none;
 }
