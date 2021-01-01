@@ -1,25 +1,91 @@
 /* 
-Основной цвет текста   #757575; - Параграфы (серый)
-Вторичный цвет текста  #212121; - Заголовки (почти черный)
-Акцкет 1 ------------- #FFFFFF; - Текст Героя
-Акцкет 2 ------------- #2196F3; - Синий для кнопок и навигации
- */
+Основной цвет текста   #212121; - Заголовки черн
+Вторичный цвет текста  #FFFFFF; - Заголовки бел
+Цвет текста Параграфы  #757575;
+
+Акцкет 1 ------------- #2196F3; - Синий для кнопок и навигации */
+
+
  /* 
- Основной цвет фона  #FFFFFF; - Белый
+ Основной цвет фона  #E5E5E5; - 
  Вторичный цвет фона #2F303A; - Герой и Футер
+ Фон хедера          #FFFFFF;
+
  */
+:root {
+    --primary-title-color:#212121;
+    --secondary-title-color:#FFFFFF;
+    --text-color:#757575;
+    --accent-color:#2196F3;
+    --logo-color:#ffffff;
+
+    --primary-background-color:#E5E5E5;
+    --secondary-background-color:#2F303A;
+    --header-background-clor:#FFFFFF;  
+    --button-background-clor:#F5F4FA;
+
+}
 
 
 body {
-    background-color: #FFFFFF;
-    color: #212121;;
+    background-color: var(--primary-background-color);
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: var(--header-background-clor);
+}
+
+footer {
+    background-color: var(--secondary-background-color);
+}
+
+.hero {
+    background-color: var(--secondary-background-color);
+}
+
+.competence,
+.our-work {
+    background-attachment: var(--primary-background-color);
+}
+
+.our-team {
+    background-color: var(--button-background-clor);
+}
+
+.button {
+    background-color: var(--accent-color);
+}
+
+.button-filter {
+    background-color: var(--button-background-clor);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    background-color: var(--accent-color);
+}
+
+.hero-text,
+.main-button {
+    color: var(--secondary-title-color);
+}
+
+.header-studio {
+    color: var(--primary-title-color);
+
+}
+
+.footer-studio {
+    color: var(--logo-color);
+}
+.footer-logo,
+.header-logo {
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 .list {
+    color: var(--primary-title-color);
     list-style: none;
 }
 
@@ -27,28 +93,44 @@ header {
     text-decoration: none;
 }
 
+.header-list,
+.contact-list {
+    color: var(--primary-title-color);
+}
+
 .list .active-page {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-/* не рпботает почему-то hover */
-.nav .list:hover, 
-.nav .list:focus {
-    color: #ffffff;
+.header-link {
+    color: var(--text-color);
 }
 
-.hero {
-    background-color: #2F303A;
+.header-link:hover {
+    color: var(--accent-color);
 }
 
-.main {
-    background-color: #E5E5E5;
+.footer-link {
+    color: rgba(255, 255, 255, 0.6);;
 }
 
-.our-team {
-    background-color:#F5F4FA;
+.footer-link:hover{
+    color: var(--accent-color);
 }
 
-footer {
-    background-color: #2F303A;;
+.text {
+    color: var(--text-color);
+}
+
+/* Цвет отличается от почты и телефона. 
+Не знаю как сделать */
+address {
+    color: var(--text-color);
+}
+
+
+/* Цвет сделал такой, чтобы было видно реакцию */
+.nav .link:hover, 
+.nav .link:focus {
+    color: #8bf75a;
 }
