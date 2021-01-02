@@ -102,6 +102,12 @@ footer {
     color: var(--primary-title-color);
 }
 
+/* Цвет сделал такой, чтобы было видно реакцию */
+.header-list:hover,
+.header-list:focus {
+    color: #8bf75a;
+}
+
 .list .active-page {
     color: var(--accent-color);
 }
@@ -132,9 +138,3 @@ address {
     color: var(--text-color);
 }
 
-
-/* Цвет сделал такой, чтобы было видно реакцию */
-.nav .link:hover, 
-.nav .link:focus {
-    color: #8bf75a;
-}
