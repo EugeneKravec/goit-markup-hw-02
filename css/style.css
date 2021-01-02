@@ -181,6 +181,7 @@ footer {
 
 /* Цвет сделал такой, чтобы было видно реакцию 
 и у меня не получилось */
+
 .header-list:hover,
 .header-list:focus {
     color: #8bf75a;
