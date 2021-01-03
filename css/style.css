@@ -179,15 +179,7 @@ footer {
     color: var(--primary-title-color);
 }
 
-/* Цвет сделал такой, чтобы было видно реакцию 
-и у меня не получилось */
-
-.header-list:hover,
-.header-list:focus {
-    color: #8bf75a;
-}
-
-.list .active-page {
+.header-list .active-page {
     color: var(--accent-color);
 }
 
@@ -195,8 +187,18 @@ footer {
     color: var(--text-color);
 }
 
-.header-link:hover {
+.header-contacts {
+    color: var(--text-color);
+}
+
+.header-contacts:hover {
     color: var(--accent-color);
+}
+
+/* Цвет сделал такой, чтобы было видно реакцию */
+.header-link:hover,
+.header-link:focus {
+    color: #8bf75a;
 }
 
 .footer-link {
@@ -215,10 +217,8 @@ footer {
     color: var(--text-color);
 }
 
-/* Цвет отличается от почты и телефона. 
-Не знаю как сделать? чтобы был одинаковый */
 address {
-    color: var(--text-color);
+    color: var(--secondary-title-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
