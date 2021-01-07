@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-----------------Хедер с навигацией---------------->
+    <!----------------- Хедер с навигацией ---------------->
     <header>
       <nav class="nav">
         <a class="header-logo" href="index.html">Web
@@ -44,29 +44,31 @@
     </header>
 
     <main>
-    <!------------------Фильтры Проекты-------------------------->
+    <!------------------ Фильтры Проекты -------------------------->
       <section class="filter main-text">
-        <ul class="list">
-          <li>
-            <button class="button-filter" type="button">Все</button>
-          </li>
-          <li>
-            <button class="button-filter" type="button">Веб-сайты</button>
-          </li>
-          <li>
-            <button class="button-filter" type="button">Приложения</button>
-          </li>
-          <li>
-            <button class="button-filter" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="button-filter" type="button">Маркетинг</button>
-          </li>
-        </ul>
-      </section>
-      
-      <section class="project main-text">
-        <ul class="list project-list">
+        <!-- Контейнер для фильтра -->
+        <div>
+          <ul class="list">
+            <li>
+              <button class="button-filter" type="button">Все</button>
+            </li>
+            <li>
+              <button class="button-filter" type="button">Веб-сайты</button>
+            </li>
+            <li>
+              <button class="button-filter" type="button">Приложения</button>
+            </li>
+            <li>
+              <button class="button-filter" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="button-filter" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Контейнер для япроектов -->
+        <div>        
+          <ul class="list project-list">
           <li>
             <img src="./images/open laptop.jpg" alt="Открытый лептоп"/>
             <h2 class="project-item">Технокряк</h2>
@@ -118,11 +120,14 @@
             <h2 class="project-item" lang="en">Growing Business</h2>
             <a class="link project-text" href="">Приложение</a>
           </li>
-        </ul>
+          </ul>
+        </div>
+
+
       </section>
     </main>
 
-    <!------------------Контакты и адрес------------------>
+    <!------------------ Контакты и адрес ------------------>
     <footer>
       <nav>
         <a class="footer-logo" href="index.html">Web
