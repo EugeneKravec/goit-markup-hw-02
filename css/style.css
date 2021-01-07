@@ -12,6 +12,13 @@
  Фон хедера          #FFFFFF;
 
  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
     --primary-title-color:#212121;
     --secondary-title-color:#FFFFFF;
@@ -25,7 +32,6 @@
     --button-background-clor:#F5F4FA;
 
 }
-
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -73,6 +79,15 @@ footer {
 .competence,
 .our-work {
     background-color: var(--primary-background-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    …
 }
 
 .our-work-title,
@@ -275,4 +290,8 @@ address {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+
+.container {
+    outline: 2px solid tomato
 }
